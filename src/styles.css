@@ -17,136 +17,153 @@ html {
   font-size: 10px;
 }
 
+/* Estilos Gerais */
 body {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  font-family: 'Poppins', sans-serif;
-  color: var(--color-white);
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-/* Header */
-#header { 
+/* Estilos do Header */
+#header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 15px 30px;
-  position: fixed;
-  top: 0; 
-  background: var(--color-black);
-  z-index: 2;
-  transition: background 0.3s ease; 
+  align-items: center;  
 }
 
 .header-title {
   text-decoration: none;
-  color: var(--color-white);
-  font-size: 2rem;
+  color: white;
+  font-size: 1.8rem;
 }
 
-.header-title:hover {
-  opacity: 0.8;
-}
-/* End-Header */
-
-/* Navbar */
 .navbar {
-  max-width: 350px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #333;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  list-style-type: none;
   margin: 0;
-  padding: 10px; 
+  padding: 0;
+  font-size: 1.5rem;
 }
 
-.navbar ul li a {
+.navbar li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar a {
   text-decoration: none;
-  color: var(--color-white);
-  font-size: 1.4rem;
-  font-weight: 700;
+  color: white;
+  font-weight: bold;
 }
-/* End-Navbar */
 
-/* Ínicio */
+/* Estilos do About */
+#about {
+  background-color: #f2f2f2;
+  padding: 20px;
+  
+}
 
-#sobrenos {
-  height: 100%;
-  width: 100%;
+.container-about {
+  max-width: 100%;
+}
+
+.about-text {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-  max-width: 900px;  
+  font-size: 1.2rem;
 }
 
-.sobrenos-text {
-  margin-top: 50px;
+.about-text img {
+  max-width: 50%;
+  margin-right: 20px;
+  padding: 30px;
+  border-radius: 10px; 
 }
 
-.sobrenos-text img {
-  width: 100%; /* Ajuste conforme necessário */
-  max-width: 600px; /* Ajuste conforme necessário */
-  height: auto; /* Isso mantém a proporção da imagem */
-  margin-bottom: 15px; /* Ajuste conforme necessário */
-  margin-top: 650px;
+.text-content {
+  max-width: 50%;
+  font-size: 1.5rem;
 }
 
-.sobrenos-text p {
-  font-size: 1.7rem;
-  margin: 15px 0;
-  line-height: 1.5; 
-  white-space: pre-line; 
-  margin-top: 20px;
+.text-content a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #333;
 }
 
-/*End-Ínicio */
+/* Estilos do Plans */
+#plans {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  font-size: 1.2rem;
+}
 
-/* Planos */
-#planos {
-  height: 100vh; /* 100% da altura da viewport */
+.container-plans {
+  max-width: 100%;
+}
+
+table {
   width: 100%;
-  text-align: center;
-  padding: 40px;
-  background-color: blue; 
-  color: black; 
-  max-width: 700px;
-  margin-top: 300px; 
-}
-
-#planos h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-#planos-content {
-
-}
-
-#planos table {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
   border-collapse: collapse;
   margin-top: 20px;
 }
 
-#planos th,
-#planos td {
-  border: 1px solid #ddd;
-  padding: 15px;
+th, td {
+  border: 1px solid white;
+  padding: 10px;
 }
 
+h2 {
+  text-align: center;
+}
+
+table a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Estilos do Questions */
+#questions {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.container-questions {
+  max-width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Estilos do Footer */
+#footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
